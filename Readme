@@ -1,0 +1,453 @@
+# 📊 Customer Churn Prediction & Analytics Dashboard
+
+##  Project Overview
+
+Customer churn is one of the most critical business challenges in subscription-based industries such as telecommunications, SaaS, banking, and insurance. Acquiring a new customer is often more expensive than retaining an existing one, making churn prediction a key business priority.
+
+This project combines **Business Intelligence**, **Machine Learning**, and **Interactive Visualization** to help organizations identify customers at risk of leaving and understand the factors driving churn.
+
+The solution consists of:
+
+* 📈 Interactive Customer Churn Analytics Dashboard
+* 🤖 Machine Learning-Based Churn Prediction Model
+* 🌐 Streamlit Web Application
+* 📊 Business Insights and Retention Recommendations
+
+---
+
+# 🎯 Business Problem
+
+The company wants to understand:
+
+### WHO is churning?
+
+Identify customer segments with the highest churn rates.
+
+### WHEN are customers churning?
+
+Determine the stage in the customer lifecycle where churn is most likely.
+
+### WHY are customers churning?
+
+Discover the key drivers and behaviors associated with customer attrition.
+
+### WHAT can be done to reduce churn?
+
+Provide actionable recommendations to improve customer retention.
+
+---
+
+# 📂 Dataset
+
+The dataset contains customer demographic, service usage, contract, billing, and churn information.
+
+### Key Features
+
+| Feature          | Description                        |
+| ---------------- | ---------------------------------- |
+| Customer ID      | Unique customer identifier         |
+| Age              | Customer age                       |
+| Gender           | Male/Female                        |
+| Tenure           | Number of months with company      |
+| Monthly Charges  | Monthly subscription charges       |
+| Total Charges    | Total amount paid                  |
+| Contract Type    | Month-to-month, One Year, Two Year |
+| Payment Method   | Customer payment method            |
+| Tech Support     | Availability of technical support  |
+| Online Security  | Security service subscription      |
+| Churn            | Target variable (Yes/No)           |
+
+---
+
+# 🛠 Technology Stack
+
+## Programming Language
+
+* Python
+
+## Data Processing
+
+* Pandas
+* NumPy
+
+## Machine Learning
+
+* Scikit-learn
+
+## Visualization
+
+* Matplotlib
+* Seaborn
+* Plotly
+
+## Dashboard & Deployment
+
+* Streamlit
+* Power BI
+
+
+---
+
+# 🔄 Project Workflow
+
+## 1. Data Collection
+
+* Imported customer churn dataset
+* Validated schema and feature types
+* Identified target variable
+
+---
+
+## 2. Data Preprocessing
+
+Performed:
+
+### Missing Value Handling
+
+* Checked and treated null values
+
+### Data Type Conversion
+
+* Converted numerical columns
+* Standardized formats
+
+### Categorical Encoding
+
+* Label Encoding
+* One-Hot Encoding
+
+### Feature Engineering
+
+Created:
+
+* Age Groups
+* Tenure Groups
+* Customer Lifetime Value Segments
+* Risk Categories
+
+---
+
+## 3. Exploratory Data Analysis (EDA)
+
+Analyzed:
+
+### Customer Distribution
+
+* Age
+* Gender
+* Contract Type
+* Payment Method
+
+### Churn Analysis
+
+* Churn by Contract
+* Churn by Tenure
+* Churn by Monthly Charges
+* Churn by Services
+
+### Correlation Analysis
+
+* Feature relationships
+* Churn drivers
+
+---
+
+# 📊 Customer Churn Dashboard
+
+The dashboard is designed around four key business questions.
+
+---
+
+## WHO is Churning?
+
+### Visualizations
+
+* Churn by Contract Type
+* Churn by Payment Method
+* Churn by Internet Service
+* Churn by Age Group
+* Churn by Customer Segment
+
+### Insights Generated
+
+* Identify high-risk customer groups
+* Compare churn rates across segments
+* Detect vulnerable customer categories
+
+---
+
+## WHEN are Customers Churning?
+
+### Visualizations
+
+* Churn vs Tenure Groups
+* Customer Lifecycle Analysis
+* Monthly Churn Trend
+
+### Insights Generated
+
+* Identify churn timing patterns
+* Detect early-stage churn behavior
+* Understand customer retention lifecycle
+
+---
+
+## WHY are Customers Churning?
+
+### Visualizations
+
+* Churn vs Monthly Charges
+* Churn vs Online Security
+* Churn vs Tech Support
+* Feature Importance Analysis
+
+### Insights Generated
+
+* Root causes of customer attrition
+* Impact of pricing and services
+* High-impact churn drivers
+
+---
+
+## WHAT Actions Should Be Taken?
+
+### Dashboard Recommendations
+
+* Improve onboarding experience
+* Promote long-term contracts
+* Offer retention discounts
+* Enhance customer support services
+* Prioritize high-risk customers
+
+---
+
+# 🤖 Machine Learning Model
+
+## Objective
+
+Predict whether a customer is likely to churn based on demographic, contract, and service usage data.
+
+---
+
+## Models Evaluated
+
+### Logistic Regression
+
+Used as baseline model.
+
+### Random Forest Classifier
+
+Selected as final model due to better performance and ability to capture complex patterns.
+
+---
+
+# ⚙️ Model Training Pipeline
+
+## Train-Test Split
+
+* Training Data: 80%
+* Testing Data: 20%
+
+---
+
+## Feature Scaling
+
+Applied StandardScaler on numerical features:
+
+* Age
+* Tenure
+* Monthly Charges
+* Total Charges
+
+---
+
+## Model Training
+
+Random Forest Classifier:
+
+* 100 Estimators
+* Balanced Class Weights
+* Tuned Threshold for Improved Recall
+
+---
+
+# 📈 Model Evaluation
+
+Evaluation Metrics:
+
+### Accuracy
+
+Measures overall correctness.
+
+### Precision
+
+Measures quality of churn predictions.
+
+### Recall
+
+Measures ability to detect actual churners.
+
+### F1 Score
+
+Balance between precision and recall.
+
+### Confusion Matrix
+
+Detailed prediction breakdown.
+
+---
+
+## Final Model Performance
+
+| Metric    | Score |
+| --------- | ----- |
+| Accuracy  | ~67%  |
+| Recall    | ~75%  |
+| Precision | ~51%  |
+| F1 Score  | ~61%  |
+
+### Business Interpretation
+
+The model prioritizes recall to identify more customers likely to churn, enabling proactive retention efforts.
+
+---
+
+# 🚨 Customer Risk Segmentation
+
+Predicted customers are categorized into:
+
+### 🟢 Low Risk
+
+Churn Probability < 40%
+
+### 🟡 Medium Risk
+
+Churn Probability 40–70%
+
+### 🔴 High Risk
+
+Churn Probability > 70%
+
+---
+
+# 🌐 Streamlit Application
+
+The project includes a fully interactive web application.
+
+## Features
+
+### CSV Upload
+
+Upload customer data for prediction.
+
+### Real-Time Predictions
+
+Generate churn probabilities instantly.
+
+### Risk Segmentation
+
+Categorize customers by risk level.
+
+### Interactive Dashboard
+
+Explore churn insights dynamically.
+
+### Business Recommendations
+
+Receive actionable retention suggestions.
+
+---
+
+# 📁 Project Structure
+
+Customer-Churn-Prediction/
+
+├── data/
+│   └── churn_data.csv
+
+├── notebooks/
+│   └── churn_analysis.ipynb
+
+├── model/
+│   ├── churn_model.pkl
+│   ├── scaler.pkl
+│   └── columns.pkl
+
+├── dashboard/
+│   └── powerbi_dashboard.pbix
+
+├── app/
+│   └── app.py
+
+├── requirements.txt
+
+├── README.md
+
+└── LICENSE
+
+---
+
+
+
+---
+
+Run Streamlit Application
+
+python -m streamlit run app.py
+
+---
+
+# 📊 Key Business Insights
+
+The analysis revealed:
+
+* Customers on month-to-month contracts churn significantly more than customers with long-term contracts.
+* Customers with high monthly charges have higher churn probability.
+* Most churn occurs during the early stages of the customer lifecycle.
+* Lack of technical support and online security services increases churn risk.
+* Early customer engagement is critical for retention.
+
+---
+
+# 🎯 Business Impact
+
+This solution helps organizations:
+
+* Reduce customer attrition
+* Improve customer retention
+* Identify high-risk customers proactively
+* Optimize retention campaigns
+* Increase customer lifetime value
+
+---
+
+# 🔮 Future Enhancements
+
+Planned improvements include:
+
+* XGBoost and LightGBM models
+* Hyperparameter tuning
+* SHAP explainability
+* Real-time prediction API
+* Automated retraining pipeline
+* Cloud deployment
+* Advanced customer segmentation
+
+---
+
+# 👩‍💻 Author
+
+Aarti Choudhary
+
+Data Analytics | Machine Learning | Business Intelligence
+
+---
+
+# ⭐ Support
+
+If you found this project useful:
+
+* Star the repository
+* Fork the project
+* Share feedback
+* Connect for collaboration
