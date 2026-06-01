@@ -8,14 +8,14 @@ This project combines **Business Intelligence**, **Machine Learning**, and **Int
 
 The solution consists of:
 
-* 📈 Interactive Customer Churn Analytics Dashboard
-* 🤖 Machine Learning-Based Churn Prediction Model
-* 🌐 Streamlit Web Application
-* 📊 Business Insights and Retention Recommendations
+* Interactive Customer Churn Analytics Dashboard
+* Machine Learning-Based Churn Prediction Model
+* Streamlit Web Application
+* Business Insights and Retention Recommendations
 
 ---
 
-# 🎯 Business Problem
+# Business Problem
 
 The company wants to understand:
 
@@ -37,7 +37,7 @@ Provide actionable recommendations to improve customer retention.
 
 ---
 
-# 📂 Dataset
+# Dataset
 
 The dataset contains customer demographic, service usage, contract, billing, and churn information.
 
@@ -59,7 +59,7 @@ The dataset contains customer demographic, service usage, contract, billing, and
 
 ---
 
-# 🛠 Technology Stack
+# Technology Stack
 
 ## Programming Language
 
@@ -88,7 +88,7 @@ The dataset contains customer demographic, service usage, contract, billing, and
 
 ---
 
-# 🔄 Project Workflow
+# Project Workflow
 
 ## 1. Data Collection
 
@@ -152,7 +152,7 @@ Analyzed:
 
 ---
 
-# 📊 Customer Churn Dashboard
+# Customer Churn Dashboard
 
 The dashboard is designed around four key business questions.
 
@@ -221,7 +221,7 @@ The dashboard is designed around four key business questions.
 
 ---
 
-# 🤖 Machine Learning Model
+# Machine Learning Model
 
 ## Objective
 
@@ -241,7 +241,7 @@ Selected as final model due to better performance and ability to capture complex
 
 ---
 
-# ⚙️ Model Training Pipeline
+# Model Training Pipeline
 
 ## Train-Test Split
 
@@ -271,7 +271,7 @@ Random Forest Classifier:
 
 ---
 
-# 📈 Model Evaluation
+# Model Evaluation
 
 Evaluation Metrics:
 
@@ -312,25 +312,25 @@ The model prioritizes recall to identify more customers likely to churn, enablin
 
 ---
 
-# 🚨 Customer Risk Segmentation
+# Customer Risk Segmentation
 
 Predicted customers are categorized into:
 
-### 🟢 Low Risk
+### Low Risk
 
 Churn Probability < 40%
 
-### 🟡 Medium Risk
+### Medium Risk
 
 Churn Probability 40–70%
 
-### 🔴 High Risk
+### High Risk
 
 Churn Probability > 70%
 
 ---
 
-# 🌐 Streamlit Application
+#  Streamlit Application
 
 The project includes a fully interactive web application.
 
@@ -358,7 +358,7 @@ Receive actionable retention suggestions.
 
 ---
 
-# 📁 Project Structure
+# Project Structure
 
 Customer-Churn-Prediction/
 
@@ -409,7 +409,7 @@ The analysis revealed:
 
 ---
 
-# 🎯 Business Impact
+# Business Impact
 
 This solution helps organizations:
 
@@ -421,7 +421,7 @@ This solution helps organizations:
 
 ---
 
-# 🔮 Future Enhancements
+# Future Enhancements
 
 Planned improvements include:
 
@@ -435,7 +435,7 @@ Planned improvements include:
 
 ---
 
-# 👩‍💻 Author
+# Author
 
 Aarti Choudhary
 
@@ -443,7 +443,7 @@ Data Analytics | Machine Learning | Business Intelligence
 
 ---
 
-# ⭐ Support
+# Support
 
 If you found this project useful:
 
